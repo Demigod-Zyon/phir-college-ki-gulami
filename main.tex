@@ -1,0 +1,71 @@
+\documentclass[12pt,a4paper]{JSS}
+\usepackage{fancyhdr}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage[margin=3in,headsep=1in]{geometry}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{titlesec, titletoc}
+\geometry{total={210mm,297mm},
+left=3 cm,right=2cm,
+top=3.5cm,bottom=2cm}
+\usepackage{titletoc}
+%\setsecheadstyle{\Large\bfseries}
+\titleformat{\chapter}[display]
+  {\size \bfseries \centering}{\MakeUppercase{\chaptertitlename}\ \thechapter}{40pt}{\size\MakeUppercase }
+\titlespacing*{\chapter}{-10pt}{-20pt}{40pt}
+\titlecontents{chapter}[6em]{\bigskip\bfseries}%\vspace{1cm}%
+{\contentslabel[\MakeUppercase{\chaptername}~\thecontentslabel]{7em}\MakeUppercase}%{\MakeUppercase}%numberless chapters%
+{\hfill\contentspage}%
+%{\normalfont\bfseries}{\thesection}{1em}{}
+ \titleformat{\section}
+%{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries\textit}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[runin]
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}[runin]
+{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titleformat{name=\section,numberless}
+{\filcenter\Large\bfseries}
+{}
+{.5em}
+{}  
+
+\title{\bigbigsize\textbf{TITLE}}
+\begin{document}
+\pagestyle{fancyplain}
+\fancyh{}
+\fancyhead[C]{JSS Academy of Technical Education–NOIDA\\
+Mini Project/Internship Assessment (BCC 351) (CSE III Semester)}
+%\doublespacing
+\setstretch{1.5}
+\maketitle
+\pagenumbering{roman}
+\include{VM}
+\include{POPSO}
+\include{CO-PO_PSO}
+\include{cover}
+%\include{Declar&cert}
+\abstract
+%\pagestyle{plain}
+\doublespacing
+%\onehalfspacing
+%\input{references}
+%\addcontentsline{toc}{chapter}{reference}
+\include{contents}
+%\include{sa}
+\pagenumbering{arabic}
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+\include{chapter5}
+\input{References}
+\end{document}
+
